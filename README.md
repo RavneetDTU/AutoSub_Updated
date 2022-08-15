@@ -1,3 +1,12 @@
+# Edit
+
+Use below command to run (Assuming pbmm, scorer and .mp4 file are at root of this repo folder.)
+For APIs we will fix these paramters into main.py file, so won't be need to pass them again and again while calling main.py from fastAPI.
+
+```
+python3 autosub/main.py --model deepspeech-0.8.2-models.pbmm --scorer deepspeech-0.8.2-models.scorer --file video.mp4 --format srt
+```
+
 # AutoSub
 
 - [AutoSub](#autosub)
