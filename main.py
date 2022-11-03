@@ -104,3 +104,6 @@ async def external_file(file: UploadFile = File(...)):
         shutil.copyfileobj(file.file, buffer)
 
     return get_srt_from_file(audio_paths, file.filename)
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="127.0.0.1", port=8000)
